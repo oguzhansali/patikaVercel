@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.list-label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.list-value {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: normal;   
+}
+.person-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:  1px solid #ccc;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.person-name {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.list-type{
+    font-size: 8pt;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.person {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.person-list-entry {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border:  1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.person-list-entry ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.person-list-entry li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    margin-right: 10px;
 }
