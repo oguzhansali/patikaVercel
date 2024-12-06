@@ -1,11 +1,21 @@
 import './App.css'
 import Person from './components/Person';
-function App() {
+import { phoneBook } from './data';
 
+
+function App() {
   return (
     <>
-    <Person/>
-
+    {phoneBook.map((person) => (
+        <Person
+          key={person.name}
+          avatar={person.avatar}
+          name={person.name}
+          phoneNumbers={person.phoneNumbers}
+          addresses={person.addresses}
+          emails={person.emails}
+        />
+      ))}
     </>
   )
 }

@@ -11,8 +11,8 @@ export const phoneBook = [
             {name:"work", address:"4321 Main St"}
         ],
         emails: [
-            {name:"personel", emails:"jhon@doe.com"},
-            {name:"work", address:"jhon@acme.com"}
+            {name:"personel", emails:"jhon1@doe.com"},
+            {name:"work", emails:"jhon@acme.com"}
         ],
     },
     {
@@ -27,8 +27,8 @@ export const phoneBook = [
             {name:"work", address:"987 Main St"}
         ],
         emails: [
-            {name:"personel", emails:"jane@doe.com"},
-            {name:"work", address:"jane@acme.com"}
+            {name:"personel", emails:"jane1@doe.com"},
+            {name:"work", emails:"jane@acme.com"}
         ],
     },
 ]
