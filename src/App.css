@@ -33,6 +33,7 @@
     font-weight: bold;
 }
 .person {
+    position: relative;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -61,4 +62,15 @@
     flex-direction: column;
     padding: 8px 0;
     margin-right: 10px;
+}
+
+.person-remove-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 8pt;
+    cursor: pointer;
+    padding: 5px;
+    padding-right: 25px;
+    color: #ccc;
 }

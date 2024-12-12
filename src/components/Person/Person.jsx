@@ -2,7 +2,6 @@ import { useState } from "react";
 import PersonInformationList from "./PersonInformation";
 import PropTypes from "prop-types";
 
-
 const personListTypes = [
     {
         title:"Phone Numbers",
@@ -26,27 +25,13 @@ const personListTypes = [
 
 
 const Person = (props) => {
-    const [counter,setCounter] = useState(0);
     const [activeListType, setActiveListType] = useState("emails");
     const handleListTypeChange = (newListType) => {
         setActiveListType(newListType);
     }
-
-
-
-
-    console.log("rendered",Math.random());
     return (
         <div className="person">
-            <button 
-            onClick={()=>{
-                    setActiveListType("addresses");
-                    setCounter(counter +1);
-                    console.log(activeListType);
-
-                }
-            }>Show Adresses {counter}
-            </button>
+            <div onClick={props.onRemovePerson} className="person-remove-x">x</div>
             <div className="side">
                 <img className="person-avatar" src={props.avatar} alt={props.name} />
                 <h1 className="person-name">{props.name}</h1>
@@ -70,5 +55,10 @@ const Person = (props) => {
 }
 Person.PropTypes = {
     name : PropTypes.string.isRequired,
-}
+};
+
+Person.defaultProps = {
+    name : "Unknown",
+};
+
 export default Person;

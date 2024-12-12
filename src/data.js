@@ -1,4 +1,4 @@
-export const phoneBook = [
+export const initialPhoneBook = [
     {
         avatar:"https://i.pravatar.cc/150?img=3",
         name:"Jhon Doe" ,
